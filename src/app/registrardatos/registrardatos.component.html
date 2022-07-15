@@ -1,0 +1,19 @@
+<div class="col-md-6 offset-md-3">
+    <br>
+<h3 class="text-center">Registrar datos</h3>
+<form (ngSubmit)= "onSubmit()">
+    <div class="form-group">
+        <label>ID</label>
+        <input type="number" class="form-control" id="id_datos" [(ngModel)] = "datos.id_datos" name="id_datos">
+        <label>Nombre</label>
+        <input type="text" class="form-control" id="nombre" [(ngModel)] = "datos.nombre" name="nombre">
+        <label>Correo</label>
+        <input type="text" class="form-control" id="correo" [(ngModel)] = "datos.correo" name="correo">
+        <label>Edad</label>
+        <input type="number" class="form-control" id="edad" [(ngModel)] = "datos.edad" name="edad">
+    </div>
+    <div class="text-center">
+    <button class="btn btn-success btn-dark">Guardar</button>
+</div>
+</form>
+</div>

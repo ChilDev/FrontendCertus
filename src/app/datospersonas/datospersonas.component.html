@@ -1,0 +1,17 @@
+<h2>Lista de personas</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Edad</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let datos of datos">
+            <td>{{datos.nombre}}</td>
+            <td>{{datos.correo}}</td>
+            <td>{{datos.edad}}</td>
+        </tr>
+    </tbody>
+</table> 
